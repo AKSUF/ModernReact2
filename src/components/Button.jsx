@@ -1,4 +1,4 @@
-import { useState,useCallback } from "react"
+import { useState,useCallback,useMemo } from "react"
 import React from 'react';
 import Title from "./Title";
 import ShowCount from "./ShowCount";
@@ -16,11 +16,20 @@ function Buttonhock(){
         setCount2(prevCount => prevCount + 5);
     },[]);
 
+    const isEvenOrAdd=useMemo(()=>{
+        return count1%2===0;
+    },[count1]);
+
+
+
+
+
     return (
         <div className="app">
             <h1>Hello</h1>
             <Title />
             <ShowCount count={count1} title="Counter 1" />
+            <span>{isEvenOrAdd ? 'Even' : 'Odd'}</span>
             <Button onClick={incrementByOne}>Increment By One</Button>
             <hr />
             <ShowCount count={count2} title="Counter 2" />
