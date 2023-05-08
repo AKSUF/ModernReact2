@@ -1,13 +1,12 @@
 
 import './App.css';
-import Form from './components/Form';
-import Time from './components/Time';
+import Counter from './components/Counter';
 
 
 function App() {
   return (
     <div className="App">
-<Form/>
+<Counter></Counter>
     </div>
   );
 }
