@@ -1,10 +1,10 @@
 import React from 'react'
-import GetPost from './GetPost'
+import GetPost2 from './GetPost2'
 
 const Main2 = () => {
     return (
         <div>
-     <GetPost></GetPost>
+     <GetPost2></GetPost2>
         </div>
     )
 }
