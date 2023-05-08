@@ -1,13 +1,12 @@
 
 import './App.css';
-import LayoutComponentOne from './components/LayoutComponentOne';
-import LayoutComponentTwo from './components/LayoutComponentTwo';
+import Logo from './components/Logo';
+import './assets/css/globa.css'
 
 function App() {
   return (
     <div className="App">
-<LayoutComponentTwo></LayoutComponentTwo>
-{/* <LayoutComponentOne></LayoutComponentOne> */}
+<Logo></Logo>
     </div>
   );
 }
