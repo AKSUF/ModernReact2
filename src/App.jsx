@@ -1,12 +1,13 @@
 
 import './App.css';
+import Form from './components/Form';
+import Time from './components/Time';
 
-import Buttonhock from './components/Button';
 
 function App() {
   return (
     <div className="App">
-<Buttonhock></Buttonhock>
+<Form/>
     </div>
   );
 }
