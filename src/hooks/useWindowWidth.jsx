@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from 'react'
 
-const useWindowWidth = () => {
+const useWindowWidth = (screenSize) => {
     const[onSmallScreen,setOnSmallScreen]=useState(false);
 
-    const checkScreenSize=()=>{
-        setOnSmallScreen(window.innerWidth<768);
-    }
-    
     useEffect(()=>{
+
+        const checkScreenSize=()=>{
+            setOnSmallScreen(window.innerWidth < screenSize);
+        }
+
     checkScreenSize();
     window.addEventListener("resize",checkScreenSize);
     return()=>window.removeEventListener("resize",checkScreenSize);
-    },[])
-
-
+    },[screenSize])
     return onSmallScreen;
+    
 }
 
 export default useWindowWidth
