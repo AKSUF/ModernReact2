@@ -1,6 +1,6 @@
 
 import './App.css';
-import ComplexCounter from './components/ComplexCounter';
+import ComplexCounter from './components/Complexounter3';
 import Counter from './components/Counter';
 
 
