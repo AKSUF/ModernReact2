@@ -4,6 +4,7 @@ import About from './components/About'
 import Navbar from './components/Navbar';
 import Error from './components/Error';
 import Posts from './components/Posts';
+import Services from './components/Services';
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
 
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/services" element={<About />} />
-          <Route path="/posts/:category" element={<Posts />} />
+          {/* <Route path="/services" element={<Services number="5" />} /> */}
+          <Route path="/services" render={()=><Services number="5"/>} />
+          <Route path="/:category/:topic" render={({ match }) => <Posts match={match} />} />
 
           <Route path="*" element={<Error />} />
 

@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Services = (props) => {
+const Services = ({number}) => {
     return (
         <div>
-            
+            <h1>This is the page -{number}</h1>
         </div>
     )
 }
