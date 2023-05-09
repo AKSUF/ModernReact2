@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Image = () => {
+const Dashboard = (props) => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const Image = () => {
     )
 }
 
-export default Image
+export default Dashboard

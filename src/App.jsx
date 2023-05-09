@@ -1,17 +1,26 @@
+import { Route, BrowserRouter as Router, Routes} from 'react-router-dom';
+import Home from './components/Home'
+import About from './components/About'
 
 import './App.css';
+import Navbar from './components/Navbar';
 
-import Tutorial from './components/Tutorial';
-import GlobalStyle from './components/style/Global.style';
 function App() {
   return (
     <div className="App">
 
-      <GlobalStyle></GlobalStyle>
-<Tutorial></Tutorial>
 
+      <Router>
+      <Navbar></Navbar>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<About />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
 
 export default App;
+

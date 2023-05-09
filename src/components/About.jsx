@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Tag = () => {
+const About = (props) => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const Tag = () => {
     )
 }
 
-export default Tag
+export default About
