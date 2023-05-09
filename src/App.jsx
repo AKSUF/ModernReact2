@@ -1,12 +1,15 @@
 
 import './App.css';
-import Logo from './components/Logo';
-import './assets/css/globa.css'
 
+import Tutorial from './components/Tutorial';
+import GlobalStyle from './components/style/Global.style';
 function App() {
   return (
     <div className="App">
-<Logo></Logo>
+
+      <GlobalStyle></GlobalStyle>
+<Tutorial></Tutorial>
+
     </div>
   );
 }
